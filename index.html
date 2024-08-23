@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Decoder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  
+   <main class="apresentacao">
+    <section class="apresentacao-conteudo">
+          
+      <h1 class="apresentacao-conteudo-titulo">Bem-vindo(a) ao Decodificador de Texto!</h1>
+      
+      <textarea class="apresentacao-conteudo-texto" cols="41" rows="4" placeholder=" digite aqui o seu texto"></textarea>
+
+      <div class="apresentacao-conteudo-mensagem">
+        <h6>Digite apenas letras minúsculas e sem acentos.</h6>
+      </div>
+    
+      <h2 class="texto-botao">O que você deseja fazer?</h2>
+
+      <div class="botoes">
+        <button class="botao-individual" onclick="btnEncriptar()">
+            Criptografar
+            <img src="./assets/lock.png" alt="Cadeado aberto" class="icone">
+        </button>
+        <button class="botao-individual" onclick="btnDesencriptar()">
+            Descriptografar
+            <img src="./assets/unlock.png" alt="Cadeado fechado" class="icone">
+        </button>
+    </div>
+
+    </section>
+
+    <section class="area-mensagem">
+        <textarea class="mensagem" cols="20" rows="10"></textarea>
+
+        <div class="botoes">
+          <button class="botao-copiar" onclick="btnCopiar()">
+              Copiar
+              <img src="./assets/copy.png" alt="Copiar" class="icone">
+          </button>
+        </div>
+    </section>
+    
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido por Isabelle Santos</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
